@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden="true">Registration Form</label>
+                <input id="name" type="text" name="txt" placeholder="User name" required="">
+                <input id="email" type="email" name="email" placeholder="Email" required="">
+                <input id="password" type="password" name="pswd" placeholder="Password" required="">
+                <button onclick="register(event)">Registration</button>
+                
+            </form>
+          
+              
+          </div>
+ </div>
+   
+ <div>
+    <table id="students">
+        <tr>
+            <th id="display_name">Asma Butt</th>
+            <th id="display_email" >@gmail.com</th>
+            <th id="display_password">Lahore</th>
+        </tr>
+       
+        </table>
+</div>
+</center>
+    <script>
+        const register = function (event) {
+            // Receive user input
+            let r_name = document.querySelector("#name").value;
+            let r_email = document.querySelector("#email").value;
+            let r_password = document.querySelector("#password").value;
+            // Output on page
+            display_name.innerHTML = r_name;
+            display_email.innerHTML = r_email;
+            display_password.innerHTML = r_password;
+            event.preventDefault();
+        };
+    </script>
+</body>
+
+</html>
